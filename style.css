@@ -1,0 +1,337 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+body {
+    background-color: #f5f5f5;
+    color: #040202;
+}
+/* Header Styles */
+header {
+    background-color: #090101;
+    padding: 10px 1;
+}
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo img {
+    width: 100px;
+    align-items: left;
+}
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+}
+.navbar nav ul li {
+    margin-left: 20px;
+}
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.search-cart {
+    align-items: right;
+}
+.search-cart input {
+    padding: 10px;
+    margin-right: 10px;
+}
+.cart-btn {
+    color: white;
+    text-decoration: none;
+    background-color: #e53935;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin: 0 10px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+.navbar a:hover {
+    color: #f39c12; /* Nike orange highlight */}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background: url('hello1.jpeg') center center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #e9f1f0;
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+h1 {
+    font-size: 3em;
+    margin: 0.5em 0;
+}
+p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+.hero-buttons .btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.primary-btn {
+    background-color: #e53935;
+    color: #fff;
+}
+/* Featured Products Section */
+.featured-products {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+.featured-products h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+}
+.product {
+    width: 30%;
+    text-align: center;
+}
+.product img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.product-btn {
+    background-color: #111;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.product-btn:hover {
+    background-color: #333;
+}
+/* Customization Section */
+.customization-section {
+    background-color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+.customization-section h2 {
+    font-size: 60px;
+    margin-bottom: 40px;
+    color: black;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+.customization-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 30px;
+}
+/* Product Image Section */
+.product-preview {
+    flex: 1;
+}
+
+.product-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+/* Customization Options Section */
+.customization-options h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #1d1d1d;
+}
+.customization-options {
+    flex: 1;
+    text-align: left;
+}
+
+.customization-options h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #1d1d1d;
+}
+
+.color-options {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 10px;
+    align-items: left
+    ;
+}
+
+.color-box {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.color-box:hover {
+    transform: scale(1.1);
+}
+
+select {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.buy-now-btn {
+    padding: 12px 25px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.buy-now-btn:hover {
+    background-color: #ff0000;
+}
+
+/* Athlete Spotlight Section */
+.athlete-spotlight {
+    background-color: white;
+    color: black;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.section-title p {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 40px;
+}
+
+/* Athlete Container */
+.athlete-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* Athlete Card */
+.athlete-card {
+    background-color: #222;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 350px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.athlete-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Athlete Image */
+.athlete-image img {
+    width: 100%;
+    height: auto;
+    border-bottom: 4px solid #f39c12;
+    border-radius: 15px 15px 0 0;
+}
+
+/* Athlete Info */
+.athlete-info {
+    padding: 20px;
+}
+
+.athlete-info h3 {
+    font-size: 24px;
+    color: #f39c12;
+    margin-bottom: 5px;
+}
+
+.athlete-info p {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .athlete-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .athlete-card {
+        max-width: 100%;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #111;
+    padding: 40px 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.footer-column h4 {
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}

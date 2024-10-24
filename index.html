@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="nike logo.png" alt="Nike Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="https://www.nike.com/in/men" target="_blank">Men</a></li>
+                    <li><a href="https://www.nike.com/in/women" target="_blank">Women</a></li>
+                    <li><a href="https://www.nike.com/in/kids" target="_blank">Kids</a></li>
+                    <li><a href="https://www.nike.com/in/w/sale-3yaep" target="_blank">Sale</a></li>
+                </ul>
+            </nav>
+            <div class="search-cart">
+                <input type="text" placeholder="Search">
+                <a href="https://www.nike.com/in/cart" target="_blank" class="btn cart-btn">Cart</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find Your Fast</h1>
+            <p>Discover the latest innovations in sportswear and shoes, designed to help you perform at your best.</p>
+            <div class="hero-buttons">
+                <a href="https://www.nike.com/in/w/nike-v2k-shoes-3picezy7ok" target="_blank" class="btn primary-btn">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="nikeair.png" alt="Nike Shoe 1">
+                <p>Nike Air Max Excee</p>
+                <a href="https://www.nike.com/in/t/air-max-excee-shoes-DhKz9D/HQ3411-100" target="_blank" class="btn product-btn">Buy Now</a>
+            </div>
+            <div class="product">
+                <img src="dunk-low-retro.png" alt="Nike Shoe 2">
+                <p>Nike Dunk Low Retro </p>
+                <a href="https://www.nike.com/in/t/dunk-low-retro-se-shoes-VjlvMQ/HQ1932-700" target="_blank" class="btn product-btn">Buy Now</a>
+            </div>
+            <div class="product">
+                <img src="air-max-dn-shoes.png" alt="Nike Shoe 3">
+                <p>Nike Air Max Dn</p>
+                <a href="https://www.nike.com/in/t/air-max-dn-shoes-JPGdD1/HQ3478-104" target="_blank" class="btn product-btn">Buy Now</a>
+            </div>
+        </div>
+    </section>
+    <!-- Customization Section -->
+    <section class="customization-section">
+        <h2>Customize Your Nike Shoes</h2>
+        <div class="customization-container">
+            <div class="product-preview">
+                <img id="shoeImage" src="air max.webp" alt="Nike Shoe" class="product-image">
+            </div>
+
+            <div class="customization-options">
+                <h3>Select Color:</h3>
+                <div class="color-options">
+                    <div class="color-box" style="background-color: white"></div>
+                    <div class="color-box" style="background-color: #060506;" ></div>
+                    <div class="color-box" style="background-color: #ff0000;" ></div>
+                    <div class="color-box" style="background-color: #a3c41f;" ></div>
+                </div>
+
+                <h3>Select Style:</h3>
+                <select id="styleSelector">
+                    <option value="classic">Classic</option>
+                    <option value="sport">Sport</option>
+                    <option value="urban">Urban</option>
+                </select>
+
+                <a href="https://www.nike.com/in/w/nike-v2k-shoes-3picezy7ok" target="_blank">Buy Now</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function changeShoe(color) {
+            document.getElementById('shoeImage').src = 'shoe-' + color + '.jpg';
+        }
+
+        function changeStyle() {
+            let style = document.getElementById('styleSelector').value;
+            alert('You selected the ' + style + ' style.');
+        }
+    </script>
+
+        <section class="athlete-spotlight">
+            <div class="section-title">
+                <h2>Athlete Spotlight</h2>
+                <p>Real stories from real athletes and customers just like you</p>
+            </div>
+        
+            <div class="athlete-container">
+                <!-- Athlete 1 -->
+                <div class="athlete-card">
+                    <div class="athlete-image">
+                        <img src="lebron.jpg" alt="LeBron James">
+                    </div>
+                    <div class="athlete-info">
+                        <h3>LeBron James</h3>
+                        <p>Basketball Legend</p>
+                        <p>"Strive for greatness. Nike gives me the tools to make that happen on and off the court."</p>
+                    </div>
+                </div>
+        
+                <!-- Athlete 2 -->
+                <div class="athlete-card">
+                    <div class="athlete-image">
+                        <img src="serena.webp" alt="Serena Williams">
+                    </div>
+                    <div class="athlete-info">
+                        <h3>Serena Williams</h3>
+                        <p>Tennis Icon</p>
+                        <p>Empowerment through sport. Nike helps me push boundaries.</p>
+                        
+                    </div>
+                </div>
+        
+                <!-- Athlete 3 -->
+                <div class="athlete-card">
+                    <div class="athlete-image">
+                        <img src="cristianoronaldo.avif" alt="Eliud Kipchoge">
+                    </div>
+                    <div class="athlete-info">
+                        <h3>Cristiano Ronaldo</h3>
+                        <p>Football Legend</p>
+                        <p>Nike is not just a brand, it's a way of life.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-links">
+            <div class="footer-column">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="https://www.nike.com/in/men" target="_blank">Men</a></li>
+                    <li><a href="https://www.nike.com/in/women" target="_blank">Women</a></li>
+                    <li><a href="https://www.nike.com/in/kids" target="_blank">Kids</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>About Nike</h4> 
+                <ul>
+                    <li><a href="https://about.nike.com/en/" target="_blank">Our Story</a></li>
+                    <li><a href="https://jobs.nike.com/" target="_blank">Careers</a></li>
+                    <li><a href="https://www.nike.com/in/sustainability" target="_blank">Sustainability</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="https://www.nike.com/in/help/#contact" target="_blank">Contact Us</a></li>
+                    <li><a href="https://www.nike.com/in/orders/details/" target="_blank">Order Status</a></li>
+                    <li><a href="https://www.nike.com/in/help/a/returns-policy" target="_blank">Shipping & Returns</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
